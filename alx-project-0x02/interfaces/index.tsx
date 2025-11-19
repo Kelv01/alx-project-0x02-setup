@@ -3,3 +3,12 @@ export interface User {
   age: number;
   phone: number;
 }
+
+export interface Welcome {
+    people: Person[];
+}
+
+export interface Person {
+    name:          string;
+    "high score"?: number;
+}
