@@ -12,3 +12,8 @@ export interface Person {
     name:          string;
     "high score"?: number;
 }
+
+export interface CardProps {
+  title: string;
+  content: string;
+}
