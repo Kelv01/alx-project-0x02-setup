@@ -7,12 +7,12 @@ const Users = () => {
     const [users, setUsers] = useState<UserProps[]>([])
 
      useEffect(() => {
-    async function fetchUsers() {
+    async function getStaticProps() {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const data = await res.json();
       setUsers(data);
     }
-    fetchUsers();
+    getStaticProps();
   }, []);
   return (
     <>
