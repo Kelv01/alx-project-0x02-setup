@@ -11,12 +11,12 @@ const Posts = () => {
 
 
     useEffect(() => {
-        async function  fetchPosts() {
+        async function  getStaticProps() {
             const res = await fetch("https://jsonplaceholder.typicode.com/posts")
             const data = await res.json()
             setPosts(data)
         }
-        fetchPosts()
+        getStaticProps()
     },[])
 
 
