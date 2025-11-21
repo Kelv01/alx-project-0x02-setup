@@ -15,6 +15,9 @@ const Header = () => {
             <li className="hover:text-amber-300">
                 <Link href='/posts'>Posts</Link>
             </li>
+            <li className="hover:text-amber-300">
+                <Link href='/users'>Users</Link>
+            </li>
         </ul>
       </nav>
     </header>
